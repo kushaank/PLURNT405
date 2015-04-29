@@ -21,7 +21,7 @@
     <br/>
     <h3>Submit a comment for <?php echo $info->title ?> </h3>
     <?php
-    
+
     include(app_path().'/Services/Soundcloud.php');
 
     // create a client object with your app credentials
