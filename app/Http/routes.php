@@ -46,7 +46,7 @@ Route::get('/genres/{genre_name}', function($genre_name){
 });
 
 
-Route::get('facebook',function(){
+Route::get('/facebook',function(){
 
 	return \Socialize::with('facebook')->redirect();
 });
@@ -62,7 +62,7 @@ Route::get('/home',function(){
 });
 Route::get('/songs/{id}','SongController@getDetails');
 Route::post('/songs/comment','SongController@comment');
-Route::get('account/facebook',function(){
+Route::get('/account/facebook',function(){
 	$songs = (new Songs())->getSongsTop();
 
 	$user=\Socialize::with('facebook')->user();
