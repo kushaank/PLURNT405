@@ -1,6 +1,8 @@
 <?php
 require_once 'Soundcloud/Exception.php';
 require_once 'Soundcloud/Version.php';
+
+
 /**
  * SoundCloud API wrapper with support for authentication using OAuth 2
  *

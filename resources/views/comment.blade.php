@@ -21,10 +21,11 @@
     <br/>
     <h3>Submit a comment for <?php echo $info->title ?> </h3>
     <?php
-    require_once '/Users/kush2/laravel/app/Services/Soundcloud.php';
+    
+    include(app_path().'/Services/Soundcloud.php');
 
     // create a client object with your app credentials
-    $client = new Services_Soundcloud('acdde4a4f1d8b575b2cfa40730c1d3e2', '763eea34b31b1b8a22fa9372c1ea4704');
+    $client =  new Services_Soundcloud('acdde4a4f1d8b575b2cfa40730c1d3e2', '763eea34b31b1b8a22fa9372c1ea4704');
     $client->setCurlOptions(array(CURLOPT_FOLLOWLOCATION => 1));
 
     // get a tracks oembed data
